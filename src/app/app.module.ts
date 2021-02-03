@@ -1,18 +1,18 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {AppComponent} from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatRadioModule} from '@angular/material/radio';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {CommonModule} from '@angular/common';
-import {MatDividerModule} from '@angular/material/divider';
-import {AngularFontAwesomeModule} from 'angular-font-awesome';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
+import { MatDividerModule } from '@angular/material/divider';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
-import {MatIconModule} from '@angular/material/icon';
-import {AvatarComponent} from '../../projects/avatar/src/public-api';
+import { MatIconModule } from '@angular/material/icon';
+import { AvatarComponent } from '../../projects/avatar/src/public-api';
 
 @NgModule({
   declarations: [
@@ -31,16 +31,16 @@ import {AvatarComponent} from '../../projects/avatar/src/public-api';
     ReactiveFormsModule,
     MatDividerModule,
     MatButtonModule,
-    AngularFontAwesomeModule,
+    FontAwesomeModule,
     RouterModule.forRoot(
       [
-        { path: "", component: AppComponent}
+        { path: "", component: AppComponent }
       ]
     )
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
